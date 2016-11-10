@@ -10,6 +10,9 @@ set autoread
 " set , as mapleader
 let mapleader = ","
 
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
 " map <leader>q and <leader>w to buffer prev/next buffer
 noremap <leader>q :bp<CR>
 noremap <leader>w :bn<CR>
@@ -39,7 +42,11 @@ Plugin 'vim-scripts/FuzzyFinder'
 Plugin 'itchyny/lightline.vim'      
 Plugin 'Lokaltog/vim-easymotion'    
 Plugin 'tpope/vim-surround'         
+Plugin 'kien/ctrlp.vim'
+Plugin 'junegunn/vim-github-dashboard'
+Plugin 'tpope/vim-fugitive'
 " -- Web Development
+Plugin 'pangloss/vim-javascript'
 Plugin 'Shutnik/jshint2.vim'        
 Plugin 'mattn/emmet-vim'            
 Plugin 'kchmck/vim-coffee-script'   
@@ -47,7 +54,7 @@ Plugin 'groenewege/vim-less'
 Plugin 'skammer/vim-css-color'      
 Plugin 'hail2u/vim-css3-syntax'     
 Plugin 'digitaltoad/vim-jade'  
-
+ 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
